@@ -59,11 +59,3 @@ plt.show()
 sales_2022_estimated = []
 for i in range(7, 13):
    sales_2022_estimated.append(int(sales_data[9][i]) + int(sales_data[9][i]) * SGR)
-
-
-months = lines[1:]
-months_2022 = [f"{m} 2022" for m in months[6:]]
-plt.barh(months_2022, sales_2022_estimated)
-plt.xlabel('Estimated Sales')
-plt.title('Estimated Sales for Last 6 Months of 2022')
-plt.show()
